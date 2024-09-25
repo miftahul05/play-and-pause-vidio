@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>game trailer web roblox</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <video autoplay muted id="trailer">
+      <source src="img/game_trailer.mp4" type="video/mp4" />
+    </video>
+    <div class="intro">
+      <img src="img/roblox-logo.png" alt="">
+      <p>roblox adalah game terbaik yang mendunia dan sangat membuat naka anak nyaman dalam memainikannya</p>
+      <button id="btn" onclick="trigerBtn()">pause</button>
+    </div>
+    <script>
+      const trailer = document.getElementById("trailer")
+      const btn = document.getElementById("btn")
+      function trigerBtn() {
+        if(trailer.paused) {
+          trailer.play()
+          btn.innerHTML = "pause"
+        } else {
+          trailer.pause()
+          btn.innerHTML = "play"
+        }
+      }
+    </script>
+  </body>
+</html>

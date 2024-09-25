@@ -1,0 +1,52 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+#trailer{
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  min-width: 100%;
+  min-height: 100%;
+}
+
+.intro {
+  display: flex;
+  flex-direction: column;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  background-color: black;
+  color: white;
+  padding: 20px;
+  font-size: 20px;
+  font-family: fantasy;
+  justify-content: center;
+  align-items: center;
+  text-transform: capitalize;
+}
+
+img {
+  width: 150px;
+  height: 150px;
+}
+
+#btn {
+  border: none;
+  padding: 12px;
+  color: white;
+  background-color: salmon;
+  font-weight: 700;
+  margin-top: 20px;
+  text-transform: uppercase;
+  width: 200px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+#btn:hover {
+  background-color: blue;
+  transition: all ease-in-out 0.5;
+}
